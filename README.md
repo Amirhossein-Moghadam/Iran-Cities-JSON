@@ -4,6 +4,7 @@ The Iran Cities in 'JSON' format and crawled into https://epostcode.post.ir/code
 
 ### JSON output sample:
 
+```
 {
     "تهران": [
       "شهریار",
@@ -54,3 +55,4 @@ The Iran Cities in 'JSON' format and crawled into https://epostcode.post.ir/code
       "کوره فرنگی"
   ],
 }
+```
