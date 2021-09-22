@@ -26,9 +26,14 @@ def getCity(step):
     response = requests.request("GET", url, headers=headers, data=payload)
     soup = BeautifulSoup(response.text, 'html.parser')
     cities = []
+    
     for link in soup.find_all('a'):
         cities.append(link.get_text()[4:])
+        
     allCities.append(cities[1:])
+
+    for index in range(len(allCities)):
+        allCities[index].sort()
 
 
 step = 1
